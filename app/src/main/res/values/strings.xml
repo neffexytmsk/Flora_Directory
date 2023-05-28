@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Flora Directory</string>
+    <string name="app_reg_name"><font color="#7E7E7E">Нет аккаунта? Пройти </font><font color="#000000">регистрацию</font></string>
+</resources>

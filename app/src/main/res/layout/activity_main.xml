@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityJava">
+
+    <TextView
+        android:id="@+id/categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Разделы"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/userLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toEndOf="@+id/categories"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/person" />
+
+    <ImageView
+        android:id="@+id/cameraTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toEndOf="@+id/userLog"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/camera_test" />
+
+    <ImageView
+        android:id="@+id/categoryMushrooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categories"
+        app:srcCompat="@drawable/category_mushrooms" />
+
+    <ImageView
+        android:id="@+id/categoryBerriesAndFruits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categories"
+        app:srcCompat="@drawable/category_berries_and_fruits" />
+
+    <ImageView
+        android:id="@+id/categoryTrees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryMushrooms"
+        app:srcCompat="@drawable/category_trees" />
+
+    <ImageView
+        android:id="@+id/categoryFlowers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryBerriesAndFruits"
+        app:srcCompat="@drawable/category_flowers" />
+
+    <ImageView
+        android:id="@+id/categoryShrubs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryTrees"
+        app:srcCompat="@drawable/category_shrubs" />
+
+    <ImageView
+        android:id="@+id/categoryOthers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryFlowers"
+        app:srcCompat="@drawable/category_other" />
+
+    <TextView
+        android:id="@+id/categoryNameMushrooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:text="Грибы"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryMushrooms"
+        app:layout_constraintEnd_toEndOf="@+id/categoryMushrooms"
+        app:layout_constraintLeft_toLeftOf="@id/categoryMushrooms"
+        app:layout_constraintTop_toTopOf="@id/categoryMushrooms"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <TextView
+        android:id="@+id/categoryNameBerriesAndFruits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="Ягоды\nи\nфрукты"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryBerriesAndFruits"
+        app:layout_constraintEnd_toEndOf="@+id/categoryBerriesAndFruits"
+        app:layout_constraintLeft_toLeftOf="@id/categoryBerriesAndFruits"
+        app:layout_constraintTop_toTopOf="@id/categoryBerriesAndFruits"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <TextView
+        android:id="@+id/categoryNameTrees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="Деревья"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryTrees"
+        app:layout_constraintEnd_toEndOf="@+id/categoryTrees"
+        app:layout_constraintLeft_toLeftOf="@id/categoryTrees"
+        app:layout_constraintTop_toTopOf="@id/categoryTrees"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <TextView
+        android:id="@+id/categoryNameFlowers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:text="Цветы"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryFlowers"
+        app:layout_constraintEnd_toEndOf="@+id/categoryFlowers"
+        app:layout_constraintLeft_toLeftOf="@id/categoryFlowers"
+        app:layout_constraintTop_toTopOf="@id/categoryFlowers"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <TextView
+        android:id="@+id/categoryNameShrubs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Кустарники"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryShrubs"
+        app:layout_constraintEnd_toEndOf="@+id/categoryShrubs"
+        app:layout_constraintLeft_toLeftOf="@id/categoryShrubs"
+        app:layout_constraintTop_toTopOf="@id/categoryShrubs"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <TextView
+        android:id="@+id/categoryNameOthers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="Другие"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryOthers"
+        app:layout_constraintEnd_toEndOf="@+id/categoryOthers"
+        app:layout_constraintLeft_toLeftOf="@id/categoryOthers"
+        app:layout_constraintTop_toTopOf="@id/categoryOthers"
+        app:layout_constraintVertical_bias="0.548" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

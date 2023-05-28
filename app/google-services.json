@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "608560185442",
+    "firebase_url": "https://floradirectory-default-rtdb.firebaseio.com",
+    "project_id": "floradirectory",
+    "storage_bucket": "floradirectory.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608560185442:android:a68276191c9b5d49f9d13b",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxGnjO7AGzSZHd9oqDyrwMiU0FjYTYThw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
