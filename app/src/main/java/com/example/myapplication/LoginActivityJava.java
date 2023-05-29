@@ -1,9 +1,9 @@
 package com.example.myapplication;
-
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.Image;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.EditTextPreference;
 import android.text.TextUtils;
@@ -18,6 +18,7 @@ import android.widget.Toast;
 import net.sourceforge.jtds.jdbcx.proxy.ConnectionProxy;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -31,7 +32,7 @@ public class LoginActivityJava extends AppCompatActivity
         setContentView(R.layout.activity_login);
         initLog();
     }
-    protected void initLog() {
+    public void initLog() {
 
         Button btnLog = findViewById(R.id.buttonLogin);
         TextView btnReg = findViewById(R.id.regHelp);
@@ -43,25 +44,9 @@ public class LoginActivityJava extends AppCompatActivity
         btnLog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String z = "";
-                Boolean isSuccess = false;
                 if ((emailNameLog.getText().length() > 0 && passwordLog.getText().length() > 0) && isValidEmail(emailNameLog.getText().toString())) {
-                    startActivity(new Intent(LoginActivityJava.this, MainActivityJava.class));
                     ConnectionHelper connectionHelper = new ConnectionHelper();
-                    if (!(emailNameLog.getText().toString().equals(emailNameReg.getText().toString())) && !(passwordLog.getText().toString().equals(passwordReg.getText().toString()))) {
-                        try {
-                                Connection con = connectionHelper.CONN();
-                                String query = "SELECT * FROM Userr WHERE Mail='" + emailNameLog.getText().toString() + "' and Password='" + passwordLog.getText().toString() + "'";
-                                Statement stmt = con.createStatement();
-                                stmt.executeQuery(query);
-                        } catch (Exception ex) {
-                            isSuccess = false;
-                            z = "Exceptions";
-                        }
-                    }
-                    else {
-                        Toast.makeText(LoginActivityJava.this,"Аккаунта не существует",Toast.LENGTH_LONG).show();
-                    }
+                    startActivity(new Intent(LoginActivityJava.this, MainActivityJava.class));
                 }
                 else if (emailNameLog.getText().length() == 0 && passwordLog.getText().length() == 0) {
                     Toast.makeText(LoginActivityJava.this, "Введите данные", Toast.LENGTH_LONG).show();

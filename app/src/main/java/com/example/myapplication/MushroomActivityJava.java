@@ -3,10 +3,18 @@ package com.example.myapplication;
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+import android.widget.SearchView;
+import android.widget.TextView;
+
+import java.sql.Array;
+import java.util.ArrayList;
 
 public class MushroomActivityJava extends AppCompatActivity{
     @Override
